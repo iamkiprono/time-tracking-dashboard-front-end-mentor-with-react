@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+:root {
+  /* primary colors */
+  --Blue: hsl(246, 80%, 60%);
+
+  --Light--red--work: hsl(15, 100%, 70%);
+  --Soft--blue--play: hsl(195, 74%, 62%);
+  --Light--red--study: hsl(348, 100%, 68%);
+  --Lime--green--exercise: hsl(145, 58%, 55%);
+  --Violet--social: hsl(264, 64%, 52%);
+  --Soft--orange--self--care: hsl(43, 84%, 65%);
+
+  /* neutral colors */
+  --Very--dark--blue: hsl(226, 43%, 10%);
+  --Dark--blue: hsl(235, 46%, 20%);
+  --Desaturated--blue: hsl(235, 45%, 61%);
+  --Pale--Blue: hsl(236, 100%, 87%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: white;
+}
+
+.homepage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Very--dark--blue);
+  
+}
+
+.left-card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 400px;
+  background: var(--Dark--blue);
+  border-radius: 20px;
+}
+
+.card-person {
+  background: var(--Blue);
+  height: 60%;
+  padding: 20px;
+  border-radius: 20px;
+  width: 250px;
+}
+.timeline {
+  border-radius: 20px;
+  background: var(--Dark--blue);
+  height: 40%;
+  padding: 20px;
+}
+.timeline p {
+  padding: 10px 0;
+  color: rgb(153, 129, 98);
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.timeline p:hover {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  transition: 0.1s ease-in-out;
+}
+
+.jeremy {
+  width: 60px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: center;
+  padding: 20px;
+}
+
+.right-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.activity-card {
+  width: 250px;
+  height: 180px;
+  position: relative;
+  border-radius: 20px;
+  background-position: center;
+  background-size: contain;
+}
+.activity {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--Dark--blue);
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+}
+.activity:hover {
+  background: var(--Desaturated--blue);
+}
+.hours {
+  font-size: 2rem;
+}
+
+.name {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .container {
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+  }
+.activity-card{
+  width: 340px;
+}
+.card-person{
+  width: 100%;
+}
+.left-card{
+  width: 340px;
+}
+}
