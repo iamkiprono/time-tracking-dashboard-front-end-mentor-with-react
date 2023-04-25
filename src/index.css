@@ -36,7 +36,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--Very--dark--blue);
-  
 }
 
 .left-card {
@@ -134,13 +133,18 @@ body {
     flex-direction: column;
     align-items: center;
   }
-.activity-card{
-  width: 340px;
-}
-.card-person{
-  width: 100%;
-}
-.left-card{
-  width: 340px;
-}
+  .activity-card {
+    width: 340px;
+  }
+  .card-person {
+    width: 100%;
+  }
+  .left-card {
+    width: 340px;
+    height: 250px;
+  }
+  .timeline {
+    display: flex;
+    justify-content: space-between;
+  }
 }

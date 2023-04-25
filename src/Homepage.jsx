@@ -9,7 +9,7 @@ const Homepage = () => {
         <div className="left-card">
           <div className="card-person">
             <img className="jeremy" src="/image-jeremy.png" alt="" />
-            <p className="report">Report by</p>
+            <p className="report">Report from</p>
             <p className="name">Jeremy Robson</p>
           </div>
           <div className="timeline">
