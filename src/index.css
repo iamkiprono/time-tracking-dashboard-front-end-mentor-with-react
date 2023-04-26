@@ -26,10 +26,10 @@
 
 body {
   font-family: "Rubik", sans-serif;
-  color: white;
 }
 
 .homepage {
+  
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -68,7 +68,7 @@ body {
   transition: 0.1s ease-in-out;
 }
 .timeline p:hover {
-  font-size: 18px;
+  font-size: 22px;
   color: rgb(255, 255, 255);
   transition: 0.1s ease-in-out;
 }
@@ -88,6 +88,7 @@ body {
 }
 
 .right-cards {
+  color: white;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -125,6 +126,14 @@ body {
 
 .name {
   font-size: 1.5rem;
+}
+
+.active{
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  transition: 0.1s ease-in-out;
+  border-bottom: solid 1px  white;
+
 }
 
 @media (max-width: 800px) {

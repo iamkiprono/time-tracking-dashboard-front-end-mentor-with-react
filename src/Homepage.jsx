@@ -4,7 +4,9 @@ import data from "./data/data";
 const Homepage = () => {
   // states
   const [duration, setDuration] = useState("daily");
-  
+
+
+
   return (
     <div className="homepage">
       <div className="container">
@@ -15,13 +17,13 @@ const Homepage = () => {
             <p className="name">Jeremy Robson</p>
           </div>
           <div className="timeline">
-            <p onClick={(e) => setDuration(e.target.textContent.toLowerCase())}>
+            <p className={duration === "daily" ? "active": ""} onClick={(e) => setDuration(e.target.textContent.toLowerCase())}>
               Daily
             </p>
-            <p onClick={(e) => setDuration(e.target.textContent.toLowerCase())}>
+            <p className={duration === "weekly" ? "active": ""}  onClick={(e) => setDuration(e.target.textContent.toLowerCase())}>
               Weekly
             </p>
-            <p onClick={(e) => setDuration(e.target.textContent.toLowerCase())}>
+            <p className={duration === "monthly" ? "active": ""} onClick={(e) => setDuration(e.target.textContent.toLowerCase())}>
               Monthly
             </p>
           </div>
