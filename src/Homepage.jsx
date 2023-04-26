@@ -2,7 +2,9 @@ import { useState } from "react";
 import data from "./data/data";
 
 const Homepage = () => {
+  // states
   const [duration, setDuration] = useState("daily");
+  
   return (
     <div className="homepage">
       <div className="container">
@@ -28,7 +30,9 @@ const Homepage = () => {
           {data.map((activity) => {
             return (
               <div
-                style={{ background: `url(${activity.background}) no-repeat left top, linear-gradient(${activity.gradient}, #d13531)` }}
+                style={{
+                  background: `url(${activity.background}) no-repeat left top, linear-gradient(${activity.gradient}, #d13531)`,
+                }}
                 key={activity.title}
                 className="activity-card"
               >
@@ -42,8 +46,9 @@ const Homepage = () => {
                       : activity.timeframes.monthly.current}
                     hrs
                   </p>
-                  <p className="last-week">                
-                  Last week - {duration === "daily"
+                  <p className="last-week">
+                    Last week -{" "}
+                    {duration === "daily"
                       ? activity.timeframes.daily.previous
                       : duration === "weekly"
                       ? activity.timeframes.weekly.previous
